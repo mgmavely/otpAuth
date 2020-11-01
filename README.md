@@ -1,7 +1,12 @@
 # otpAuth
 Sample OTPAuthenticator using twilio and python scripts
+
+NOTE1: For python scripts to use twilio, one must run 'pip install twilio' in
+terminal/cmd.  Additionally, when importing twillio libraries such as
+twilio.rest used in this code, it may be required to run 'sudo pip3 install
+twilio --upgrade'.
   
-NOTE: twillvar.py file is ommitted as it contains private details
+NOTE2: twillvar.py file is ommitted as it contains private details
 to twilio account, which one would need to input themselves.  For consistency
 with variables used in pyScript.py, make twilVar.py as follows:  
   
