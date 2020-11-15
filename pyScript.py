@@ -2,7 +2,7 @@ import random
 import twilVar
 import string
 
-#Uses for loop to generate random 8-digit verification code and returns
+#Uses for loop to generate random 5-character verification code and returns
 def otpGenerator():
     listLower = list(string.ascii_lowercase)
     listUpper = list(string.ascii_uppercase)
