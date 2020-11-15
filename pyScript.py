@@ -1,13 +1,21 @@
 import random
 import twilVar
+import string
 
 #Uses for loop to generate random 8-digit verification code and returns
 def otpGenerator():
-    retVal = 0;
-    for i in range(8):
-        randVal = random.randint(0,9)
+    listLower = list(string.ascii_lowercase)
+    listUpper = list(string.ascii_uppercase)
+    listNum = []
+    for i in range(10):
+        listNum.append(str(i))
+        
+    superList = listLower + listUpper +listNum
+    retVal = "";
+    
+    for i in range(5):
+        randVal = superList[random.randint(0,len(superList))]
         retVal += randVal
-        retVal *= 10
     return retVal
 
 #Function that sends message given user inputted number and random password
